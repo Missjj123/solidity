@@ -1,6 +1,7 @@
 ### 0.8.19 (unreleased)
 
 Language Features:
+* Allow defining custom operators for user-defined value types via ``using {f as +} for Typename;`` syntax.
 
 
 Compiler Features:
@@ -8,6 +9,10 @@ Compiler Features:
 
 Bugfixes:
  * TypeChecker: Also allow external library functions in ``using for``.
+
+
+AST Changes:
+ * AST: Add ``function`` field to ``UnaryOperation`` and ``BinaryOperation`` AST nodes and ``functionList.operator`` field to ``UsingForDirective`` AST nodes.
 
 
 ### 0.8.18 (2023-02-01)
